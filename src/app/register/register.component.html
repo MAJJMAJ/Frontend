@@ -1,0 +1,25 @@
+<meta name="google-signin-client_id" content="22492719926-7vk5hc8l980a2de7dvgl2085p3tmveqg.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<form>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="form-control" id="Prenom" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+        <label>LastName</label>
+        <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}" class="form-control" id="nom" placeholder="Enter Family Name">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control"  id="adresse" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label>phone</label>
+        <input type="number" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" class="form-control" id="mobile" placeholder="Enter phone">
+    </div>
+    <div class="form-group">
+        <label>password</label>
+        <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <button type="submit" class="btn btn primary" (click)="save()" >Submit</button>
+</form>
